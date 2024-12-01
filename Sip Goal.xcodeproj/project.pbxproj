@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90B3BEB2CFB8A0F00207381 /* LandingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B3BEA2CFB8A0F00207381 /* LandingPageVC.swift */; };
+		F90B3BEE2CFB8B0100207381 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B3BED2CFB8B0100207381 /* CustomTabBar.swift */; };
 		F99C7B492CFAEB210073CE61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C7B482CFAEB210073CE61 /* AppDelegate.swift */; };
 		F99C7B4B2CFAEB210073CE61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C7B4A2CFAEB210073CE61 /* SceneDelegate.swift */; };
-		F99C7B4D2CFAEB210073CE61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C7B4C2CFAEB210073CE61 /* ViewController.swift */; };
 		F99C7B502CFAEB210073CE61 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F99C7B4F2CFAEB210073CE61 /* Base */; };
 		F99C7B532CFAEB210073CE61 /* Sip_Goal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F99C7B512CFAEB210073CE61 /* Sip_Goal.xcdatamodeld */; };
 		F99C7B552CFAEB230073CE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99C7B542CFAEB230073CE61 /* Assets.xcassets */; };
 		F99C7B582CFAEB230073CE61 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F99C7B572CFAEB230073CE61 /* Base */; };
+		F99C7B602CFB522B0073CE61 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C7B5F2CFB522B0073CE61 /* LoginVC.swift */; };
+		F99C7B632CFB538D0073CE61 /* CustomizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C7B622CFB538D0073CE61 /* CustomizationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F90B3BEA2CFB8A0F00207381 /* LandingPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageVC.swift; sourceTree = "<group>"; };
+		F90B3BED2CFB8B0100207381 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		F99C7B452CFAEB210073CE61 /* Sip Goal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sip Goal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99C7B482CFAEB210073CE61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F99C7B4A2CFAEB210073CE61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F99C7B4C2CFAEB210073CE61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F99C7B4F2CFAEB210073CE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F99C7B522CFAEB210073CE61 /* Sip_Goal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sip_Goal.xcdatamodel; sourceTree = "<group>"; };
 		F99C7B542CFAEB230073CE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F99C7B572CFAEB230073CE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F99C7B592CFAEB230073CE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99C7B5F2CFB522B0073CE61 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F99C7B622CFB538D0073CE61 /* CustomizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F90B3BEC2CFB8ADD00207381 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F90B3BED2CFB8B0100207381 /* CustomTabBar.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		F99C7B3C2CFAEB210073CE61 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +74,8 @@
 			children = (
 				F99C7B482CFAEB210073CE61 /* AppDelegate.swift */,
 				F99C7B4A2CFAEB210073CE61 /* SceneDelegate.swift */,
-				F99C7B4C2CFAEB210073CE61 /* ViewController.swift */,
+				F90B3BEC2CFB8ADD00207381 /* CustomView */,
+				F99C7B612CFB536D0073CE61 /* Controller */,
 				F99C7B4E2CFAEB210073CE61 /* Main.storyboard */,
 				F99C7B542CFAEB230073CE61 /* Assets.xcassets */,
 				F99C7B562CFAEB230073CE61 /* LaunchScreen.storyboard */,
@@ -68,6 +83,16 @@
 				F99C7B512CFAEB210073CE61 /* Sip_Goal.xcdatamodeld */,
 			);
 			path = "Sip Goal";
+			sourceTree = "<group>";
+		};
+		F99C7B612CFB536D0073CE61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F99C7B5F2CFB522B0073CE61 /* LoginVC.swift */,
+				F99C7B622CFB538D0073CE61 /* CustomizationVC.swift */,
+				F90B3BEA2CFB8A0F00207381 /* LandingPageVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F99C7B4D2CFAEB210073CE61 /* ViewController.swift in Sources */,
 				F99C7B492CFAEB210073CE61 /* AppDelegate.swift in Sources */,
+				F99C7B632CFB538D0073CE61 /* CustomizationVC.swift in Sources */,
+				F90B3BEE2CFB8B0100207381 /* CustomTabBar.swift in Sources */,
 				F99C7B4B2CFAEB210073CE61 /* SceneDelegate.swift in Sources */,
+				F90B3BEB2CFB8A0F00207381 /* LandingPageVC.swift in Sources */,
 				F99C7B532CFAEB210073CE61 /* Sip_Goal.xcdatamodeld in Sources */,
+				F99C7B602CFB522B0073CE61 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -279,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
