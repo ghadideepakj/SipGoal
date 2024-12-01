@@ -30,15 +30,19 @@ class LandingPageVC: UITabBarController, UITabBarControllerDelegate {
             let achievementVC = UIViewController()
             achievementVC.view.backgroundColor = .white
             achievementVC.tabBarItem = UITabBarItem(title: "Achievement", image: UIImage(systemName: "trophy.fill"), tag: 0)
-
+            
             let historyVC = UIViewController()
             historyVC.view.backgroundColor = .white
             historyVC.tabBarItem = UITabBarItem(title: "History", image: UIImage(systemName: "calendar"), tag: 1)
-
-            let homeVC = UIViewController()
-            homeVC.view.backgroundColor = .white
+            
+            //            let homeVC = UIViewController()
+            //            homeVC.view.backgroundColor = .white
+            //            homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), tag: 2)
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let homeVC = storyboard.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
             homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), tag: 2)
-
+            
             let helpVC = UIViewController()
             helpVC.view.backgroundColor = .white
             helpVC.tabBarItem = UITabBarItem(title: "Help", image: UIImage(systemName: "questionmark.circle"), tag: 3)

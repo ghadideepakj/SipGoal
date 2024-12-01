@@ -36,7 +36,7 @@ class CustomizationVC: UIViewController {
         weightSlider.value = 70
         waterConsumptionSlider.value = 2450
                 
-        doneBtnOutlet.addTarget(self, action: #selector(openTabBar), for: .touchUpInside)
+        //doneBtnOutlet.addTarget(self, action: #selector(openTabBar), for: .touchUpInside)
 
     }
     
@@ -74,20 +74,20 @@ class CustomizationVC: UIViewController {
         return min(max(water, 10), 9000)
     }
     
-    @objc private func openTabBar() {
-            let customTabBarController = LandingPageVC()
-            customTabBarController.modalPresentationStyle = .fullScreen
-            self.present(customTabBarController, animated: true, completion: nil)
-        }
+//    @objc private func openTabBar() {
+//            let customTabBarController = LandingPageVC()
+//            customTabBarController.modalPresentationStyle = .fullScreen
+//            self.present(customTabBarController, animated: true, completion: nil)
+//        }
     
     @IBAction func doneBtnAction(_ sender: UIButton) {
         
-//        let bundle = Bundle.main
-//        let storyboard = UIStoryboard(name: "Main", bundle: bundle)
-//        if let vc = storyboard.instantiateViewController(withIdentifier: "CustomizationVC") as? CustomizationVC {
-//            
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
+        let bundle = Bundle.main
+        let storyboard = UIStoryboard(name: "Main", bundle: bundle)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "LandingPageVC") as? LandingPageVC {
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     
